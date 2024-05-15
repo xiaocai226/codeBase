@@ -60,6 +60,20 @@ export default new Router({
 				}
 			]
     	},
+		{// 表格
+			path: "/table",
+			name: "table",
+			component: Layout,
+			meta: { title: "表格TABLE", icon: "el-icon-sunny" },
+			children: [
+				{
+					path: "component",
+					name: "component",
+					meta: { title: "组件复用" },
+					component: () => import("@/views/table/component.vue"),
+				}
+			]
+    	},
 		{// echarts图
 			path: "/echarts",
 			name: "echarts",
