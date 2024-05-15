@@ -33,10 +33,10 @@ export default new Router({
 			meta: { title: "表单FORM", icon: "el-icon-sunny" },
 			children: [
 				{
-					path: "simulate",
-					name: "simulate",
+					path: "daily",
+					name: "daily",
 					meta: { title: "日常模拟" },
-					component: () => import("@/views/form/simulate.vue"),
+					component: () => import("@/views/form/daily.vue"),
 				},
 				{
 					path: "loop",
@@ -66,6 +66,12 @@ export default new Router({
 			component: Layout,
 			meta: { title: "表格TABLE", icon: "el-icon-sunny" },
 			children: [
+				{
+					path: "daily",
+					name: "daily",
+					meta: { title: "日常模拟" },
+					component: () => import("@/views/table/daily.vue"),
+				},
 				{
 					path: "component",
 					name: "component",
